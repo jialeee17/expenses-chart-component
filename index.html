@@ -2,42 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Expenses chart component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- Google Fonts -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
   </style>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/main.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Chart.js Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 <body>
 
-  My balance
-  $921.48
+  <div class="container">
 
-  Spending - Last 7 days
+    <div class="card card__top card--red">
+      <div class="div">
+        <div class="balance">
+          <span class="balance__text">My balance</span>
+          <span class="balance__amount">$921.48</span>
+        </div>
+        <div class="imgWrapper">
+          <img src="images/logo.svg" alt="" class="logo">
+        </div>
+      </div>
+    </div>
 
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
+    <div class="card card__chart">
+      <h2 class="card__title">Spending - Last 7 days</h2>
+      <!-- CHART HERE -->
+      <div style="width: 100%; height: 300px; background: linear-gradient(to right, rgb(194, 21, 0), rgb(255, 197, 0)); border-radius: 8px;"></div>
 
-  Total this month
-  $478.33
+      <div class="divider"></div>
 
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+      <div class="expenses">
+        <div>
+          <span class="expenses__text">Total this month</span>
+          <span class="expenses__amount">$478.33</span>
+        </div>
+
+        <div>
+          <span class="expenses__percentage">+2.4%</span>
+          <span class="expenses__text">from last month</span>
+        </div>
+      </div>
+    </div>
+
   </div>
+
 </body>
 </html>

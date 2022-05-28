@@ -1,0 +1,152 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+/*                                     CSS                                    */
+/* -------------------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 0.625rem;
+}
+
+html body {
+  background: #f7e9dc;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  width: 550px;
+  max-width: 90%;
+}
+
+.card {
+  background: #fff;
+  border-radius: 1.5rem;
+  padding: 3rem;
+  width: 100%;
+}
+
+.card--red {
+  background: #ec775f;
+}
+
+.card:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.card > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card > div .balance {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card > div .balance .balance__text,
+.card > div .balance .balance__amount {
+  color: #f8e9dd;
+}
+
+.card > div .balance .balance__text {
+  font-size: 1.6rem;
+}
+
+.card > div .balance .balance__amount {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.card > div .imgWrapper {
+  width: 73px;
+  height: 50px;
+}
+
+.card > div .imgWrapper img {
+  max-width: 100%;
+}
+
+.card.card__chart .card__title {
+  color: #382314;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.card.card__chart .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #f7e9dc;
+  margin: 2.5rem 0;
+}
+
+.card.card__chart .expenses {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card.card__chart .expenses div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card.card__chart .expenses .expenses__text {
+  color: #93867b;
+  font-size: 1.6rem;
+}
+
+.card.card__chart .expenses .expenses__amount {
+  color: #382314;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.card.card__chart .expenses .expenses__percentage {
+  text-align: right;
+}
+/*# sourceMappingURL=main.css.map */

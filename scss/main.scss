@@ -1,0 +1,133 @@
+/* -------------------------------------------------------------------------- */
+/*                                  Variables                                 */
+/* -------------------------------------------------------------------------- */
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$pale-orange: #f7e9dc;
+
+/* -------------------------------------------------------------------------- */
+/*                                     CSS                                    */
+/* -------------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    font-size: 0.625rem;
+}
+
+html {
+    body {
+        background: $pale-orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1.8rem;
+        min-height: 100vh;
+        min-width: 100vw;
+    }
+}
+
+.container {
+    width: 550px;
+    max-width: 90%;
+}
+
+.card {
+    background: #fff;
+    border-radius: 1.5rem;
+    padding: 3rem;
+    width: 100%;
+
+    &--red {
+        background: $soft-red;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 2.5rem;
+    }
+
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .balance {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 0.5rem;
+
+            .balance__text,
+            .balance__amount {
+                color: $cream;
+            }
+
+            .balance__text {
+                font-size: 1.6rem;
+            }
+
+            .balance__amount {
+                font-size: 2.8rem;
+                font-weight: 700;
+            }
+        }
+
+        .imgWrapper {
+            width: 73px;
+            height: 50px;
+
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    &.card__chart {
+        .card__title {
+            color: $dark-brown;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+
+        .divider {
+            width: 100%;
+            height: 2px;
+            background-color: $pale-orange;
+            margin: 2.5rem 0;
+        }
+
+        .expenses {
+            display: flex;
+            justify-content: space-between;
+
+            div {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .expenses__text {
+                color: $medium-brown;
+                font-size: 1.6rem;
+            }
+
+            .expenses__amount {
+                color: $dark-brown;
+                font-size: 3.5rem;
+                font-weight: 700;
+            }
+
+            .expenses__percentage {
+                text-align: right;
+            }
+        }
+    }
+}
