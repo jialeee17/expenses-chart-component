@@ -41,8 +41,9 @@
 
     <div class="card card__chart">
       <h2 class="card__title">Spending - Last 7 days</h2>
-      <!-- CHART HERE -->
-      <div style="width: 100%; height: 300px; background: linear-gradient(to right, rgb(194, 21, 0), rgb(255, 197, 0)); border-radius: 8px;"></div>
+
+      <!-- CHART -->
+      <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
 
       <div class="divider"></div>
 
@@ -61,5 +62,7 @@
 
   </div>
 
+  <!-- Plugins -->
+  <script src="plugin/chart.js"></script>
 </body>
 </html>
