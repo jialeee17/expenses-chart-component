@@ -14,7 +14,7 @@ This is a solution to the [Expenses chart component challenge on Frontend Mentor
 ### Links
 
 - Solution URL:
-- Live Site URL: [https://jiale456.github.io/expenses-chart-component/](https://jiale456.github.io/expenses-chart-component/)
+- Live Site URL: [https://jialeee17.github.io/expenses-chart-component/](https://jialeee17.github.io/expenses-chart-component/)
 
 ## My process
 
